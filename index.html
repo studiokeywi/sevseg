@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <title>Seven Segment Display Clock</title>
+</head>
+
+<body>
+    <div>
+        <input onclick="createClock();" type="radio" name="clockType" value="greenBlox" id="greenBlox" />
+        <label for="greenBlox">greenBlox</label>
+        <input onclick="createClock();" type="radio" name="clockType" value="skinnyPuppy" id="skinnyPuppy" />
+        <label for="skinnyPuppy">skinnyPuppy</label>
+        <input onclick="createClock();" checked type="radio" name="clockType" value="default" id="default" />
+        <label for="default">default</label>
+    </div>
+    <div>
+        <script src="sevenSegment.js"></script>
+    </div>
+</body>
+
+</html>
